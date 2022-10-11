@@ -47,5 +47,5 @@ def calcular(nombre_empleado_entry, nombre_empresa_entry, nombre_contacto_client
     entregar a {} de la
     compañía {} es de ${:0,.2f}.\n
     Con esta venta la {} tendrá
-    una utilidad de ${:0,.2f}.”
+    una utilidad de ${:0,.2f}.
         '''.format(variables_principales['nombre_empleado'], variables_principales['nombre_contacto_cliente'], variables_principales['nombre_empresa_cliente'], int(resultado), variables_principales['nombre_empresa'], int(resultado - variables_principales['costo_producto'])))

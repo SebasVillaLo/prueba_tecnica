@@ -8,7 +8,7 @@ ventana = tkinter.Tk()
 ventana.title("Prueba Tecnica")
 ventana.geometry("500x400")
 imagen = tkinter.PhotoImage(file="assets/image/logo.png")
-min_resize_imagen = imagen.subsample(15, 15)
+min_resize_imagen = imagen.subsample(2, 2)
 logo = tkinter.Label(ventana, image=min_resize_imagen)
 logo.place(x=300, y=60)
 
@@ -44,7 +44,7 @@ margen_estimado_entry = tkinter.Entry(ventana)
 margen_estimado_entry.place(x=13, y=330)
 boton = tkinter.Button(ventana, text='Calcular', command= lambda: calcular(nombre_empleado_entry.get(), nombre_empresa_entry.get(
 ), nombre_contacto_cliente_entry.get(), nombre_empresa_cliente_entry.get(), costo_producto_entry.get(), margen_estimado_entry.get()))
-boton.place(x=340, y=130)
+boton.place(x=370, y=160)
 
 
 ventana.mainloop()
